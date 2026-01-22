@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #1f1c2c, #928dab);
+    color: white;
+    padding: 22px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.navbar a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #ffd369;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.65)),
+                url("images/event-bg.jpg") center/cover no-repeat;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0 40px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 35px;
+    margin-top: 25px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 75, 43, 0.4);
+}
+
+.hero-visual img {
+    width: 100%;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+/* Sections */
+.section {
+    padding: 80px 0;
+}
+
+.section-content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* What We Do */
+.what-we-do {
+    background: #fff;
+    color: #111;
+}
+
+.what-we-do h2 {
+    color: #111;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #111;
+    color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    border-left: 4px solid #e50914;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Better spacing for many cards */
+.cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+/* Subtle professional hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+
+/* Improve text hierarchy */
+.card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Icon polish */
+.icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #d1d1d1;
+    line-height: 1.6;
+}
+
+.icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* Dark Section */
+.dark-section {
+    background: linear-gradient(135deg, #1f1c2c, #3f3c5c);
+    color: #eaeaea;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 50px 20px;
+}
+
+.dark-section h2 {
+    color: #ffd369;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta-section h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact-box {
+    background: #111;
+    color: #fff;
+    display: inline-block;
+    padding: 25px 40px;
+    border-radius: 15px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+    text-align: center;
+    padding: 25px;
+    color: #fff;
+    font-size: 14px;
+}
+.why-points {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.why-item {
+    background: rgba(255,255,255,0.08);
+    padding: 14px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #eaeaea;
+}
