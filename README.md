@@ -20,4 +20,4 @@ It highlights services, purpose, and a clear call to action with a modern and cl
 - Responsive design
 
 ## Live Preview
-🔗 https://aayushi-1505.github.io/CODSOFT/task2-Landing%20page/
+🔗 https://aayushi-1505.github.io/codsoft_task2/
